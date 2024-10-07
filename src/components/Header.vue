@@ -21,7 +21,7 @@
                             </details>
                         </li>
                         <li>
-                            <router-link> <i class="fa-solid fa-flag"></i> Nacionales</router-link>
+                            <router-link to="#"> <i class="fa-solid fa-flag"></i> Nacionales</router-link>
                         </li>
                         <li>
                             <details>

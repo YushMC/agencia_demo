@@ -316,5 +316,18 @@ section .swiper-slide {
         margin-top: 18% !important;
         padding: 5%;
     }
+    section .swiper-slide{
+        width: 80% !important;
+    }
+    .content_revista{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_revista .content_img{
+        width: 100%;
+    }
+    .content_revista .description{
+        width: 100%;
+    }
 }
 </style>

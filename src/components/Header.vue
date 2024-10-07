@@ -2,7 +2,7 @@
     <header>
         <div id="container__header">
             <div class="name_site">
-                <h1><router-link to="/"><span style="font-weight: 300;">Agencia</span>Demo</router-link></h1>
+                <h1><router-link to="/">Demo</router-link></h1>
             </div>
             <i class="fa-solid fa-bars" @click="toggleMenu"></i>
             <transition>

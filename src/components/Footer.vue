@@ -1,21 +1,30 @@
 <template>
-    <footer id ="contacto">
+    <footer id="contacto">
         <div class="content_footer">
             <div class="content_datos">
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <h4>Ubicacion</h4>
-                        <h6>{{ footerApi.direccion }} , {{ footerApi.ciudad }} , {{ footerApi.estado}}
-                            <br>CP: {{ footerApi.cp }}
-                        </h6>
+                <div style="display: flex;flex-direction:column;width:100%;">
+                    <div style="display:flex;justify-content:center;align-items:center;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div style="margin-left: 4%;">
+                            <h4>Ubicacion</h4>
+                            <h6>{{ footerApi.direccion }} , {{ footerApi.ciudad }} , {{ footerApi.estado }}
+                                <br>CP: {{ footerApi.cp }}
+                            </h6>
+                        </div>
+                    </div>
+                    <div style="margin:2%; width:100%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7525.9928703403675!2d-99.16661100000002!3d19.41256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3f6a71710f%3A0x73c2c424e1d0a02f!2sAv.%20Insurgentes%20Sur%20333%2C%20Hip%C3%B3dromo%2C%20Cuauht%C3%A9moc%2C%2006100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1728352127781!5m2!1sen!2smx"
+                            height="300" style="border:0;width:100%;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div>
                     <i class="fa-solid fa-phone"></i>
                     <div>
+                        
                         <h4>Teléfono</h4>
-                        <h6>{{ footerApi.telefono}} </h6>
+                        <h6>{{ footerApi.telefono }} </h6>
                     </div>
                 </div>
                 <div>
@@ -29,14 +38,12 @@
             <hr>
             <div class="content_datos">
                 <div>
-                    <h3><span style="font-weight: 300;">Agencia</span>Demo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eaque expedita voluptatibus,
-                        reiciendis sint provident iste. Ullam nesciunt ut id!</p>
+                    <h3>Demo</h3>
                     <ul>
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-twitter"></i></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-whatsapp"></i> {{ footerApi.whatsapp}}</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> {{ footerApi.whatsapp }}</li>
                     </ul>
                 </div>
                 <div>
@@ -121,10 +128,12 @@ footer {
     opacity: 0.8;
     font-size: 2em;
 }
-.content_datos > div > div{
+
+.content_datos>div>div {
     margin-left: 5%;
 }
-.content_datos > div > div >h6{
+
+.content_datos>div>div>h6 {
     margin: 2%;
     line-height: 1.5;
     font-weight: 400;
@@ -178,13 +187,15 @@ hr {
     height: 2px;
     background: rgba(255, 255, 255, 0.568);
 }
-#contact{
+
+#contact {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 2%;
 }
-#contact input{
+
+#contact input {
     width: 80%;
     padding: 1%;
     background: #c0c0c0;
@@ -193,7 +204,8 @@ hr {
     outline: none;
     font-weight: 200 !important;
 }
-#contact i{
+
+#contact i {
     width: 20%;
     padding: 1%;
     background: #fff;
@@ -204,12 +216,14 @@ hr {
     align-items: center;
     cursor: pointer;
 }
+
 @media screen and (max-width:700px) {
-    .content_datos{
+    .content_datos {
         display: flex;
         flex-direction: column;
     }
-    .content_datos > div{
+
+    .content_datos>div {
         justify-content: inherit;
         margin: 3% 0;
     }

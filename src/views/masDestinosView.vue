@@ -220,4 +220,14 @@ watch(() => route.query.url, (newUrl) => {
     color: #fff;
     transform: scale(1.05)
 }
+
+@media screen and (max-width:800px) {
+    .container_nacionales{
+        margin-top: 5%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+}
 </style>
